@@ -105,3 +105,31 @@
     color: var(--primary-color);
     opacity: 0.7;
   }
+  footer {
+    color: white;
+    background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("images/edinburgh-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  footer p {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+    margin-right: 20px;
+    line-height: 24px;
+  }
+  
+  .grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+  }
