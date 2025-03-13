@@ -1,7 +1,107 @@
-h1 {
+
+  :root {
+    --primary-color: #1b3044;
+    --secondary-color: #885df1;
+    --default-font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    font-family: var(--default-font-family);
+    background: #272044;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("images/edinburgh-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+  }
+  
+  h1 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
-    line-height: 144px;
+    line-height: 144px;}
+  header h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 144px;  }
+  
+  header h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  header h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 32px;
+    border-radius: 4px;
+  }
+  
+  section {
+    padding: 100px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-gap: 64px;
+  }
+  
+  .grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .img-responsive {
+    max-width: 100%;
+    display: block;
+  }
+  
+  main {
+    background: white;
+  }
+  
+  main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--secondary-color);
+  }
+  
+  main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    margin: 0;
+  }
+  
+  main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    opacity: 0.7;
   }
