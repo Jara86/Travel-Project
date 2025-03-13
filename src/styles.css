@@ -1,5 +1,4 @@
-
-  :root {
+:root {
     --primary-color: #1b3044;
     --secondary-color: #885df1;
     --default-font-family: "Poppins", sans-serif;
@@ -25,18 +24,12 @@
     padding: 200px 0;
   }
   
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 144px;}
   header h1 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 96px;
-    line-height: 144px;  }
+    line-height: 144px;
+    margin: 30px 0;
+  }
   
   header h2 {
     font-size: 40px;
@@ -72,8 +65,16 @@
     grid-template-columns: 1fr 1fr;
   }
   
+  .grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+  
   .img-responsive {
-    max-width: 100%;
+    width: 100%;
     display: block;
   }
   
@@ -105,32 +106,14 @@
     color: var(--primary-color);
     opacity: 0.7;
   }
+  
   .text-center {
     text-align: center;
   }
   
   .secondary {
     background: #F8F8F8;
-    padding: 100px 0;
-  }
-  
-  .secondary h2 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
-    margin: 0;
-    color: var(--secondary-color);
-  }
-  
-  .secondary h3 {
-    font-size: 40px;
-    line-height: 1.5;
-    margin: 0;
-    color: var(--primary-color);
-  }
-  
-  .grid-3-columns {
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px;
   }
   
   .card {
@@ -138,6 +121,7 @@
     margin: 30px 0;
     padding: 30px;
     border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .card h4 {
@@ -173,7 +157,7 @@
   .embed {
     width: 100%;
     aspect-ratio: 1/1;
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
   
   footer {
@@ -185,6 +169,7 @@
     url("images/edinburgh-footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 100px;
   }
   
   footer h3 {
@@ -199,8 +184,4 @@
     opacity: 0.7;
     margin-right: 20px;
     line-height: 24px;
-  }
-  
-  .grid-3-columns-with-first-narrow {
-    grid-template-columns: 1fr 2fr 2fr;
   }
