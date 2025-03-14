@@ -1,12 +1,16 @@
 :root {
-    --primary-color: #1b3044;
-    --secondary-color: #885df1;
-    --default-font-family: "Poppins", sans-serif;
+    --primary-color: #272044;
+    --secondary-color: #f8f8f8;
+    --accent-color: #6c63ff;
+    --text-color: #272044;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   }
   
   body {
-    font-family: var(--default-font-family);
-    background: #272044;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
   }
   
   .container {
@@ -16,9 +20,10 @@
   
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("images/edinburgh-header.jpg");
+      url("../images/edinburgh.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
     padding: 200px 0;
@@ -27,33 +32,81 @@
   header h1 {
     font-weight: 700;
     font-size: 96px;
-    line-height: 144px;
+    line-height: 1;
     margin: 30px 0;
   }
   
   header h2 {
+    font-weight: 400;
     font-size: 40px;
+    line-height: 1.5;
     margin: 0;
   }
   
   header h3 {
+    font-weight: 900;
     font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 5px;
     margin: 0;
   }
   
-  .btn {
-    display: inline-block;
-    padding: 16px 32px;
-    background: white;
-    color: var(--primary-color);
-    text-decoration: none;
+  header a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    background: white;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 16px 32px;
     margin-top: 32px;
+    display: inline-block;
     border-radius: 4px;
   }
   
+  main {
+    background-color: white;
+  }
+  
+  main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 5px;
+    color: var(--accent-color);
+    opacity: 0.3;
+    text-transform: uppercase;
+  }
+  
+  main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    margin: 0;
+  }
+  
+  main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    opacity: 0.7;
+  }
+  
   section {
+    max-width: 100%;
+    margin: 0 auto;
     padding: 100px;
+  }
+  
+  .secondary {
+    background-color: var(--secondary-color);
   }
   
   .grid {
@@ -76,99 +129,97 @@
   .img-responsive {
     width: 100%;
     display: block;
-  }
-  
-  main {
-    background: white;
-  }
-  
-  main h2 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    color: var(--secondary-color);
-  }
-  
-  main h3 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.5;
-    color: var(--primary-color);
-    margin: 0;
-  }
-  
-  main p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--primary-color);
-    opacity: 0.7;
+    border-radius: 4px;
   }
   
   .text-center {
     text-align: center;
   }
   
-  .secondary {
-    background: #F8F8F8;
-    padding: 100px;
+  .card img.img-responsive {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 4px 4px 0 0; 
   }
-  
   .card {
     background: white;
     margin: 30px 0;
-    padding: 30px;
     border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
   }
   
   .card h4 {
+    font-weight: 700;
     font-size: 24px;
-    margin: 0;
-    color: var(--primary-color);
-  }
-  
-  .card p {
-    font-size: 14px;
     line-height: 1.5;
+    color: var(--primary-color);
+    margin: 0;
   }
   
   .card h5 {
+    font-weight: 700;
     font-size: 13px;
     line-height: 1.5;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin: 20px 0 0;
   }
   
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    opacity: 0.7;
+  }
+  
   .card ul {
-    padding: 0;
+    padding-left: 20px;
   }
   
   .card li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
+    color: var(--primary-color);
+    opacity: 0.7;
   }
   
   .embed {
     width: 100%;
-    aspect-ratio: 1/1;
-    margin: 20px 0;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    transition: all 200ms ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
   }
   
   footer {
     color: white;
-    background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
-    ),
-    url("images/edinburgh-footer.jpg");
+    background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)), 
+                      url("../images/street-edinburgh.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 100px;
   }
   
@@ -184,4 +235,44 @@
     opacity: 0.7;
     margin-right: 20px;
     line-height: 24px;
+  }
+  
+  @media (max-width: 960px) {
+    header {
+      padding: 60px 0;
+    }
+  
+    header h1 {
+      font-size: 48px;
+    }
+  
+    header h2 {
+      font-size: 20px;
+    }
+  
+    header h3 {
+      font-size: 12px;
+    }
+  
+    .grid {
+      grid-gap: 32px;
+    }
+  
+    section {
+      padding: 30px;
+    }
+  
+    .card {
+      margin: 10px 0;
+    }
+  
+    .grid-2-columns,
+    .grid-3-columns,
+    .grid-3-columns-with-first-narrow {
+      grid-template-columns: 1fr;
+    }
+  
+    .embed {
+      aspect-ratio: 16 / 9;
+    }
   }
